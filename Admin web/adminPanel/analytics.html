@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HIRELY Analytics</title>
+  <link rel="stylesheet" href="adminPanel.css">
+  <link rel="stylesheet" href="analytics.css">
+</head>
+
+<body>
+
+
+  <div class="left_drawer" id="left_drawer">
+
+    <img src="/photo/logo.png" class="icon">
+    <span>AdminPanel</span>
+    <button id="btn_dashboard" onclick="location.href='dashboard.html'">Dashboard</button>
+    <button id="btn_analytics" onclick="location.href='analytics.html'">Analytics</button>
+    <button id="btn_usermanagement" onclick="location.href='userManagement.html'">User Management</button>
+    <button id="btn_contentmanagement" onclick="location.href='contentManagement.html'">Content Management</button>
+    <Button id="btn_settings" onclick="location.href='settings.html'">Settings</Button>
+    <div class="adminuser_profile-container">
+      <img src="/photo/logo.png" class="pfp">
+      <div class="user_profile">
+        <p class="adminuser" id="adminuser">Admin User</p>
+        <p class="adminemail" id="adminemail">admin@example.com</p>
+      </div>
+    </div>
+  </div>
+
+  <!--pages-->
+
+  <div class="page" id="page_dashboard"> <!--analytics-->
+
+    <div class="header_container">
+      <span class="header1">Analytics</span>
+    </div>
+
+
+
+    <div class="page-body">
+
+      <div class="cards-container">
+
+        <div class="card card1 total_user"><!--TU-->
+          <img src="/icons/users.png" class="icon1 user_icon1">
+          <span class="title1 title">TOTAL USER</span>
+          <span class="sum1 sum" id="newuser_sum">123</span>
+          <img src="/icons/profit.png" class="icon2">
+        </div>
+        <div class="card card2 applications"><!--App-->
+          <img src="/icons/line-chart.png" class="icon3">
+          <span class="title2 title">Applications</span>
+          <span class="sum2 sum">123</span>
+        </div>
+        <div class="card card3 hires"><!--hires-->
+          <img src="/icons/approved.png" class="icon3">
+          <span class="title2 title">Hires</span>
+          <span class="sum2">123</span>
+        </div>
+
+        <div class="card card4 new_user"><!--NU-->
+          <img src="/icons/users.png" class="icon1">
+          <span class=" title1 title">NEW USER</span>
+          <span class="sum1 sum" id="newuser_sum">123</span>
+          <img src="/icons/profit.png" class="icon2">
+
+        </div>
+
+        <div class="card card5 user_growth"><!--UG-->
+          <span class="title3 title">User Growth</span>
+          <img src="/icons/profit.png" class="icon4">
+          <span class="sum2 sum">123</span>
+        </div>
+
+        <div class="card card6 job_listing"><!--JL-->
+          <img src="/icons/briefcase.png" class="icon1">
+          <span class="title1 title">JOB LISTINGS</span>
+          <span class="sum1 sum" id="joblistings_sum">123</span>
+          <img src="/icons/profit.png" class="icon2">
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+
+    </div><!--page body ;  -->
+
+  </div><!--close code for analytics-->
+
+</body>
+
+</html>

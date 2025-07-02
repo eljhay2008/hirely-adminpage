@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HIRELY Dashboard</title>
+  <link rel="stylesheet" href="adminPanel.css">
+  <link rel="stylesheet" href="dashboard.css">
+
+</head>
+
+<body>
+
+  <div class="left_drawer" id="left_drawer">
+
+    <img src="/photo/logo.png" class="icon">
+    <span>AdminPanel</span>
+    <button id="btn_dashboard" onclick="location.href='dashboard.html'">Dashboard</button>
+    <button id="btn_analytics" onclick="location.href='analytics.html'">Analytics</button>
+    <button id="btn_usermanagement" onclick="location.href='userManagement.html'">User Management</button>
+    <button id="btn_contentmanagement" onclick="location.href='contentManagement.html'">Content Management</button>
+    <Button id="btn_settings" onclick="location.href='settings.html'">Settings</Button>
+    <div class="adminuser_profile-container">
+      <img src="/photo/logo.png" class="pfp">
+      <div>
+        <p class="adminuser" id="adminuser">Admin User</p>
+        <p class="adminemail" id="adminemail">admin@example.com</p>
+      </div>
+    </div>
+  </div>
+  <script src="adminPanel.js"></script>
+
+
+
+  <!--pages-->
+
+  <div class="page" id="page_dashboard"> <!--dashboard-->
+
+    <div class="header_container">
+      <span class="header1">Dashboard</span>
+    </div>
+
+    <div class="page-body">
+      <!--data row1:)-->
+      <div class="row1">
+        <!--1-->
+        <div class="data1-containers" id="totat_user">
+          <img src="/icons/users.png" class="icon1">
+          <span class="data-title">Total User</span>
+          <span class="sum" id="TU_sum">000</span>
+          <span class="rate" id="TU_rate">0% increace</span>
+
+
+        </div>
+        <!--2-->
+        <div class="data1-containers" id="content_items">
+          <img src="/icons/text-lines.png" class="icon1">
+          <span class="data-title">Content items</span>
+          <span class="sum" id="CI_sum">000</span>
+          <span class="rate" id="CI_rate">0% increace</span>
+
+        </div>
+        <!--3-->
+        <div class="data1-containers" id="total_views">
+          <img src="/icons/eye.png" class="icon1">
+          <span class="data-title">Total views</span>
+          <span class="sum" id="TV_sum">000</span>
+          <span class="rate" id="TV_rate">0% increace</span>
+
+        </div>
+        <!--4-->
+        <div class="data1-containers" id="reveenue">
+          <img src="/icons/dollar.png" class="icon1">
+          <span class="data-title">Revenuer</span>
+          <span class="sum" id="Rev_sum">000</span>
+          <span class="rate" id="Rev_rate">0% increace</span>
+
+        </div>
+      </div>
+
+      <!--row2-->
+      <!-- user_activity-->
+      <div class="row2">
+        <div class="user_activity-container" id="user_activity">
+          <span class="title">User Activity</span>
+          <div class="btn_time-container">
+            <button class="btn_time" id="btn_weekly" onclick="btn11()">Weekly</button>
+            <button class="btn_time" id="btn_monthly" onclick="btn12()">Monthly</button>
+            <button class="btn_time" id="btn_yearly" onclick="btn13()">Yearly</button>
+          </div>
+          <div class="scrollable-content_container">
+
+
+
+          </div>
+
+        </div><!--user activity   ;  -->
+
+        <div class="Trafic_Sources-container">
+          <span class="title">Trafic Sources</span>
+          <div class="scrollable-content_container">
+
+
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="Recent_Activity-container">
+        <span class="title">Recent Activity</span>
+        <button class="viewall">View all</button>
+        
+        <div class="scrollable-content_container">
+
+        </div>
+      </div>
+    </div><!--page body ;  -->
+
+  </div><!--close code for dashboard-->
+
+</body>
+
+</html>
